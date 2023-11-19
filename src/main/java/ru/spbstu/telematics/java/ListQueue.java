@@ -45,7 +45,6 @@ public class ListQueue<E> extends LinkedList<E> implements Queue<E> {
      * Like <pre>peek</pre> method of Queue.
      * @return data object if exists, else null.
      */
-    @Override
     public E head() {
         if (this.size() > 0)
             return this.tail();
