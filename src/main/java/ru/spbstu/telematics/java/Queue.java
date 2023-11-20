@@ -13,6 +13,12 @@ public interface Queue<E> extends Iterable<E> {
     public E head();
 
     /**
+     * Tail element of current queue.
+     * @return tail element of current queue.
+     */
+    public E tail();
+
+    /**
      * Remove and return head element of current queue.
      * @return head element of current queue.
      */

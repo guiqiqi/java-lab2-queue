@@ -6,9 +6,9 @@ package ru.spbstu.telematics.java;
  * <pre>
  *     0 1 2 3 4 5 6 7
  *     ^             ^
- *     |             Tail of LinkedList and head of Queue
+ *     |             Tail of LinkedList and tail of Queue
  *     |
- *     Head of LinkedList and tail of Queue
+ *     Head of LinkedList and head of Queue
  * </pre>
  * Deque will extend this implementation.
  */
@@ -41,13 +41,24 @@ public class ListQueue<E> extends LinkedList<E> implements Queue<E> {
     }
 
     /**
-     * Get head object of queue - which means tail object of LinkedList.
-     * Like <pre>peek</pre> method of Queue.
+     * Get head object of queue - which means head object of LinkedList.
+     * Like <pre>peekFirst</pre> or <pre>peek</pre> method of Queue.
      * @return data object if exists, else null.
      */
     public E head() {
         if (this.size() > 0)
-            return this.tail();
+            return this.first();
+        return null;
+    }
+
+    /**
+     * Get tail object of queue - which means tail object of LinkedList.
+     * Like <pre>peekLast</pre> method of Queue.
+     * @return data object if exists, else null.
+     */
+    public E tail() {
+        if (this.size() > 0)
+            return this.last();
         return null;
     }
 
@@ -60,7 +71,7 @@ public class ListQueue<E> extends LinkedList<E> implements Queue<E> {
     public boolean put(E data) {
         if (this._maxsize > 0 && this.size() >= this._maxsize)
             return false;
-        this.insert(data, 0);
+        this.append(data);
         return true;
     }
 
@@ -71,7 +82,7 @@ public class ListQueue<E> extends LinkedList<E> implements Queue<E> {
      */
     public E get() {
         try {
-            return this.pop();
+            return this.remove(0);
         } catch (IndexOutOfBoundsException error) {
             return null;
         }

@@ -5,13 +5,6 @@ package ru.spbstu.telematics.java;
  * @param <E> contained object type.
  */
 public interface Deque<E> extends Queue<E> {
-
-    /**
-     * Peek reference of last element in current queue.
-     * @return last element reference.
-     */
-    public E tail();
-
     /**
      * Return and remove last element in current queue.
      * @return last element reference.
@@ -23,5 +16,5 @@ public interface Deque<E> extends Queue<E> {
      * @param data element going to be pushed.
      * @return if put operation succeed.
      */
-    public boolean putTail(E data);
+    public boolean putHead(E data);
 }
