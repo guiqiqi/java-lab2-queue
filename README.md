@@ -12,7 +12,7 @@
 
 Схема структуры классов выглядит следующим образом:
 
-![uml](https://github.com/guiqiqi/java-lab2-queue/raw/main/uml.png?raw=true)
+![uml](https://github.com/guiqiqi/java-lab2-queue/raw/master/uml.png?raw=true)
 
 `LinkedList` поддерживает двусвязный список. Узлы связанного списка определяются следующим образом:
 

@@ -12,7 +12,7 @@
 
 类结构图如下：
 
-![uml](https://github.com/guiqiqi/java-lab2-queue/raw/main/uml.png?raw=true)
+![uml](https://github.com/guiqiqi/java-lab2-queue/raw/master/uml.png?raw=true)
 
 `LinkedList` 维护了一个双链表，链表的节点定义如下：
 
