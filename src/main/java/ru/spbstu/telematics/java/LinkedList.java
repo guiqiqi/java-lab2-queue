@@ -192,7 +192,7 @@ public class LinkedList<E> implements Iterable<E> {
      * @return first stored element.
      * @throws IndexOutOfBoundsException if current LinkedList empty.
      */
-    public E head() {
+    public E first() {
         if (this._head == null)
             throw new IndexOutOfBoundsException(0);
         return this._head.data;
@@ -203,7 +203,7 @@ public class LinkedList<E> implements Iterable<E> {
      * @return last stored element.
      * @throws IndexOutOfBoundsException if current LinkedList empty.
      */
-    public E tail() {
+    public E last() {
         if (this._head == null)
             throw new IndexOutOfBoundsException(0);
         return this._last.data;
