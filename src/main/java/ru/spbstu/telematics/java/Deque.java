@@ -9,12 +9,12 @@ public interface Deque<E> extends Queue<E> {
      * Return and remove last element in current queue.
      * @return last element reference.
      */
-    public E getTail();
+    E getTail();
 
     /**
      * Put a new element into queue's head.
      * @param data element going to be pushed.
      * @return if put operation succeed.
      */
-    public boolean putHead(E data);
+    boolean putHead(E data);
 }

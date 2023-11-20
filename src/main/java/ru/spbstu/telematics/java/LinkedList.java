@@ -288,7 +288,7 @@ public class LinkedList<E> implements Iterable<E> {
     }
 
     /**
-     * Support of implementation <pre>Iterable<E></pre>.
+     * Support of implementation <pre>Iterable</pre>.
      * @return Iterator of current LinkedList from head node.
      */
     public NodeIterator<E> iterator() {
