@@ -28,8 +28,8 @@ public class LinkedListTest extends TestCase {
 
         // Check if all elements inserted.
         assertEquals(list.size(), 6);
-        assertEquals(-1, (int) list.head());
-        assertEquals(4, (int) list.tail());
+        assertEquals(-1, (int) list.first());
+        assertEquals(4, (int) list.last());
         assertEquals(1, (int) list.get(2));
     }
 

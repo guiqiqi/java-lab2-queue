@@ -47,6 +47,8 @@ public class ListQueueTest extends TestCase {
         queue_standard.offer(1);
         queue_my_version.put(2);
         queue_standard.offer(2);
+        queue_my_version.put(3);
+        queue_standard.offer(3);
 
         // Test head
         assertEquals(queue_standard.peek(), queue_my_version.head());
